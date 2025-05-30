@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me - William Mbilinyi</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>About Me</h1>
+            <nav>
+                <a href="{% url 'index' %}" class="btn">Home</a>
+                <a href="{% url 'contact' %}" class="btn">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="about-details">
+                <p>My name is <strong>William Mbilinyi</strong>. I am <strong>23 years old</strong> and currently a student at <strong>Mbeya University of Science and Technology (MUST)</strong>, pursuing a <strong>Bachelor Degree in Computer Science</strong>.</p>
+
+                <p>I completed my first practical training in <strong>2023</strong> at <strong>Nkinga Referral Hospital</strong>, located in Igunga District, Tabora Region.</p>
+
+                <p>My second training took place in <strong>2024</strong> at <strong>TTCL, Mbeya Region</strong>.</p>
+
+                <p>Currently, I am working on my final year project titled: <strong>"Development of IoT System for Assessing Soil Suitability with App Recommendation in Irish Potatoes"</strong>.</p>
+
+                <p>In addition to my academic journey, I have solid experience in <strong>Networking</strong> and strong programming skills, especially in <strong>Python</strong>.</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2025 William Mbilinyi | Passionate about Technology and Innovation</p>
+        </footer>
+    </div>
+</body>
+</html>
