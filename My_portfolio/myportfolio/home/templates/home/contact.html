@@ -2,36 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Contact - William Mbilinyi</title>
+    <title>My Personal Website</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Contact Me</h1>
+            <img src="{% static 'images/profile.jpg' %}" alt="My Photo" class="profile-img">
+            <h1>Hello, I’m Mbili</h1>
+            <p>Welcome to my personal website built with Django.</p>
+
+            <!-- Navigation Buttons -->
             <nav>
-                <a href="{% url 'index' %}" class="btn">Home</a>
                 <a href="{% url 'about' %}" class="btn">About Me</a>
+                <a href="{% url 'contact' %}" class="btn">Contact</a>
             </nav>
         </header>
 
         <main>
-            <section class="contact-info">
-                <p><strong>Phone:</strong></p>
-                <ul>
-                    <li>+255 620 784 947</li>
-                    <li>+255 744 159 530</li>
-                </ul>
+            <section class="about">
+                <h2>About Me</h2>
+                <p>I am a developer passionate about web design, programming, and sharing knowledge.</p>
+            </section>
 
-                <p><strong>Email:</strong></p>
-                <p><a href="mailto:mbilinyiwilliam014@gmail.com">mbilinyiwilliam014@gmail.com</a></p>
+            <section class="projects">
+                <h2>Projects</h2>
+                <ul>
+                    <li>Portfolio Website</li>
+                    <li>Blog Application</li>
+                    <li>Crop Yield Prediction System</li>
+                </ul>
             </section>
         </main>
 
         <footer>
-            <p>© 2025 William Mbilinyi | Let’s connect and build something great!</p>
+            <p>© 2025 Mbili | Designed with ❤ in Django</p>
         </footer>
     </div>
+
+    <script src="{% static 'js/script.js' %}"></script>
 </body>
 </html>
