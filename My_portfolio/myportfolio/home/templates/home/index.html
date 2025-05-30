@@ -12,6 +12,12 @@
             <img src="{% static 'images/profile.jpg' %}" alt="My Photo" class="profile-img">
             <h1>Hello, I’m Mbili</h1>
             <p>Welcome to my personal website built with Django.</p>
+
+            <!-- Navigation Buttons -->
+            <div class="nav-buttons">
+                <a href="{% url 'about' %}" class="btn">About Me</a>
+                <a href="{% url 'contact' %}" class="btn">Contact</a>
+            </div>
         </header>
 
         <main>
