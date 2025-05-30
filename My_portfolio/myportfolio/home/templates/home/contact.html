@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - William Mbilinyi</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Contact Me</h1>
+            <nav>
+                <a href="{% url 'index' %}" class="btn">Home</a>
+                <a href="{% url 'about' %}" class="btn">About Me</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="contact-info">
+                <p><strong>Phone:</strong></p>
+                <ul>
+                    <li>+255 620 784 947</li>
+                    <li>+255 744 159 530</li>
+                </ul>
+
+                <p><strong>Email:</strong></p>
+                <p><a href="mailto:mbilinyiwilliam014@gmail.com">mbilinyiwilliam014@gmail.com</a></p>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2025 William Mbilinyi | Let’s connect and build something great!</p>
+        </footer>
+    </div>
+</body>
+</html>
